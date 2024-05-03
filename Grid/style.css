@@ -2,6 +2,7 @@
     height:400px;
     width:500px;
     background-color: black;
+    display:grid;
 }
 
 .item{
