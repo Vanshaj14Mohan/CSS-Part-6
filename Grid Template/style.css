@@ -1,15 +1,19 @@
 .container{
     height:400px;
     width:500px;
-    background-color: black;
+    background-color: yellow;
     display:grid;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-template-columns: 100px 100px 100px;
+    /* another way for columns */
+    /* grid-template-columns: auto auto auto; will create three columns automatically */
 }
 
 .item{
-    height:60px;
-    width:100px;
+    /* height:60px;
+    width:100px; */
     border:2px solid black;
     text-align:center;
     background-color: greenyellow;
+     
 }
