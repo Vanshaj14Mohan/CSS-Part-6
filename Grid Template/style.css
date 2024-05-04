@@ -3,6 +3,7 @@
     width:500px;
     background-color: black;
     display:grid;
+    grid-template-rows: 100px 100px 100px;
 }
 
 .item{
