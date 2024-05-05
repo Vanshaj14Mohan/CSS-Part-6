@@ -1,0 +1,25 @@
+.container{
+    height:400px;
+    width:500px;
+    background-color: yellow;
+    display:grid;
+    /* grid-template-rows: 80px 80px 80px 80px;
+    grid-template-columns: 100px 100px 100px; */
+    /* another way for columns */
+    /* grid-template-columns: auto auto auto; will create three columns automatically */
+    /* 1fr in rows-> 1 fraction of 100% width or available space;
+    1fr in columns-> 1 fraction of 100% height or available space; */
+    grid-template-rows: repeat(4, 1fr); 
+    /* another way to write it for rows & columns */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; same as above  */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item{
+    /* height:60px;
+    width:100px; */
+    border:2px solid black;
+    text-align:center;
+    background-color: greenyellow;
+     
+}
