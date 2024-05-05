@@ -1,0 +1,21 @@
+.container{
+    height:400px;
+    width:500px;
+    background-color: yellow;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap:10px;
+    column-gap:20px;
+    a shorthand for this */
+    grid-gap:10px 20px; /*for rows and columns, if we give only 1 value it will apply on both row & column*/
+}
+
+.item{
+    /* height:60px;
+    width:100px; */
+    border:2px solid black;
+    text-align:center;
+    background-color: greenyellow;
+     
+}
