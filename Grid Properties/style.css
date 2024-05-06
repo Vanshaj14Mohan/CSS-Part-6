@@ -2,7 +2,7 @@
     height:400px;
     width:500px;
     background-color: yellow;
-    display:grid;
+    display:inline-grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     /* row-gap:10px;
@@ -19,6 +19,8 @@
     /* align-items:end; */
     /* or */
     align-items:center;
+    /* and if we want to use both cases with as a single transition-property */
+    place-items:center;
 }
 
 .item{
@@ -30,7 +32,11 @@
 }
 
 /* And if we want to apply property on only one div both horizontal & vertical*/
-.one{
+/* .one{
     justify-self: end;
     align-self:start;
+} */
+
+.one{
+    place-self: start;
 }
