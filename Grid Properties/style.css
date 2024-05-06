@@ -8,33 +8,23 @@
     /* row-gap:10px;
     column-gap:20px;
     a shorthand for this */
-    grid-gap:10px 20px; /*for rows and columns, if we give only 1 value it will apply on both row & column*/
+    grid-gap:10px; /*for rows and columns, if we give only 1 value it will apply on both row & column*/
+    justify-items: start;
+    /* or */
+    justify-items:end;
+    /* or */
+    justify-items:center;
 }
 
 .item{
-    /* height:60px;
-    width:100px; */
+    height:60px;
+    width:100px;
     border:2px solid black;
     text-align:center;
     background-color: greenyellow;
 }
 
-/* Grid columns-> defines an item's starting & ending position inside the column  */
+/* And if we want to apply property on only one div */
 .one{
-    /* grid-column-start: 1;
-    grid-column-end: 3;
-    or a short trick */
-    grid-column: 1/4 ;
-    /* same as above
-    grid-column: 1/ span 3 ; */
-}
-
-/* Grid rows-> defines an item's starting & ending position inside the row */
-.two{
-    /* grid-row-start: 1;
-    grid-row-end: 3; */
-    /* or a short trick */ 
-    /* grid-row:1/3; */
-    /* same as above */
-    grid-row: 1/ span 3;
+    justify-items: center;
 }
