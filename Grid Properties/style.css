@@ -3,17 +3,22 @@
     width:500px;
     background-color: yellow;
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     /* row-gap:10px;
     column-gap:20px;
     a shorthand for this */
     grid-gap:10px; /*for rows and columns, if we give only 1 value it will apply on both row & column*/
-    justify-items: start;
+    /* for horizontal direction */
+    /* justify-items: start; */
     /* or */
-    justify-items:end;
+    /* justify-items:end; */
     /* or */
     justify-items:center;
+    /* for vertical direction */
+    /* align-items:end; */
+    /* or */
+    align-items:center;
 }
 
 .item{
@@ -24,7 +29,8 @@
     background-color: greenyellow;
 }
 
-/* And if we want to apply property on only one div */
+/* And if we want to apply property on only one div both horizontal & vertical*/
 .one{
-    justify-items: center;
+    justify-self: end;
+    align-self:start;
 }
