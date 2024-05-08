@@ -3,12 +3,15 @@
     width: 400px;
     text-align:center;
     background-color: pink;
-    animation-name: fontAnimation;
+    /* animation-name: fontAnimation; for font
+    animation-name: colorAnimation; for color
+    /* animation-name: heightAnimation; for height*/
+    animation-name: widthAnimation;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
-    animation-iteration-count: 4;
-    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 h1{
@@ -21,8 +24,20 @@ h1{
     to{font-size:40px;}
 }
 
-/* For color */
+/* For Color Animation*/
 @keyframes colorAnimation{
     from{background-color:pink;}
     to{background-color:aqua;}
+}
+
+/* For height Animation */
+@keyframes heightAnimation{
+    from{height:50px;}
+    to{height:200px;}
+}
+
+/* For width Animation */
+@keyframes widthAnimation{
+    from{width:25px;}
+    to{width:250px;}
 }
