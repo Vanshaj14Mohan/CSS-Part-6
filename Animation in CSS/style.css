@@ -11,7 +11,10 @@
     animation-direction: normal;
 }
 
+/* For Font Animation */
 @keyframes fontAnimation{
     from{font-size:20px;}
     to{font-size:40px;}
 }
+
+/* For color */
