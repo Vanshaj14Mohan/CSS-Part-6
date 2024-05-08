@@ -11,6 +11,10 @@
     animation-direction: normal;
 }
 
+h1{
+    text-decoration: underline;
+}
+
 /* For Font Animation */
 @keyframes fontAnimation{
     from{font-size:20px;}
@@ -18,3 +22,7 @@
 }
 
 /* For color */
+@keyframes colorAnimation{
+    from{background-color:pink;}
+    to{background-color:aqua;}
+}
