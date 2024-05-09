@@ -3,41 +3,30 @@
     width: 400px;
     text-align:center;
     background-color: pink;
-    /* animation-name: fontAnimation; for font
-    animation-name: colorAnimation; for color
-    animation-name: heightAnimation; for height */
-    animation-name: widthAnimation;
+    /* animation-name: widthAnimation;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
+    animation:testAnimation 2s ease-in 0s infinite alternate; /*writing all the properties all at once*/
 }
 
 h1{
     text-decoration: underline;
 }
 
-/* For Font Animation */
-@keyframes fontAnimation{
-    from{font-size:20px;}
-    to{font-size:40px;}
+/* Test cases for all properties */
+@keyframes testAnimation{
+    from{font-size:20px;
+        background-color:pink;
+        width:50px;
+        height:110px;
+    }
+    to{font-size:40px;
+       background-color:aqua;
+       width:300px;
+       height:200px;
+    }
 }
 
-/* For Color Animation*/
-@keyframes colorAnimation{
-    from{background-color:pink;}
-    to{background-color:aqua;}
-}
-
-/* For height Animation */
-@keyframes heightAnimation{
-    from{height:50px;}
-    to{height:200px;}
-}
-
-/* For width Animation */
-@keyframes widthAnimation{
-    from{width:25px;}
-    to{width:250px;}
-}
