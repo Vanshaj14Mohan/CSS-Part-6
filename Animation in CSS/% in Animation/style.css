@@ -1,0 +1,37 @@
+.box{
+    height:200px;
+    width: 400px;
+    text-align:center;
+    background-color: pink;
+    /* animation-name: widthAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation:colorAnimation 2s ease-in 0s infinite alternate; /*writing all the properties all at once*/
+}
+
+h1{
+    text-decoration: underline;
+}
+
+/* Test cases for all properties, Animation done in parts.. */
+@keyframes colorAnimation{
+    0%{font-size:20px;
+        background-color:pink;
+        width:50px;
+        height:110px;
+    }
+    50%{font-size:30px;
+       background-color:aqua;
+       width:100px;
+       height:150px;
+    }
+    100%{font-size:40px;
+        background-color:yellow;
+        width:200px;
+        height:300px;
+     }
+}
+
