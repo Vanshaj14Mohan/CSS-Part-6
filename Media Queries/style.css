@@ -31,3 +31,18 @@ h1{
         background-color:chocolate;
     }
 }
+
+@media (orientation:landscape){
+    h1{
+        background-color: aqua;
+        color:gray;
+    }
+}
+
+/* Same for portrait mode
+@media (orientation:portrait){
+    h1{
+        background-color:paleturquoise;
+        color:greenyellow;
+    }
+} */
